@@ -45,7 +45,7 @@
             padding-bottom:5%;
             height: 600px;
             <!--border: solid 3px rgb(65,41,39);-->
-            overflow-y: auto;
+            overflow-y: scroll;
         }
         
         p { 
@@ -61,31 +61,20 @@
         strong {
             color: rgb(65,41,39) ; 
         }
-
-        #dodecahedron {
-            position: absolute;
-            width: 400px;
-            bottom: 600px;
-            left: 100px;
-            z-index: -2;
+        #fondo {
+            position: fixed;
+            z-index: -10;
+            align-items: center;
+            right: 10px;
+            left: 10px;
+            top: 10px;
+            height: 1000px;
         }
-        #icosahedron {
-            position: absolute;
-            width: 400px;
-            bottom: 200px;
-            right: 100px;
-            z-index: -1;
-        }
-        #tetrahedron {
-            position: absolute;
-            width: 400px;
-            bottom: 100px;
-            left: 130px;
-            z-index: -1;
-        }
+       
         </style>
     </head>
     <body>
+        <img src=".\svg\fondo.svg"" id="fondo">
         <h1 class="main-header">Mates y Nueces</h1>
         <!--<div class="buttons">
             <h3 id="button1"> Entradas </h2>
@@ -108,8 +97,6 @@
                 son ver series, desde anime hasta thrillers, escuchar musica, principalmente twenty one pilots, y aprender repostería.
             </p>
         </div>
-        <img id="dodecahedron" src=".\svg\dodecahedron-svgrepo-com.svg", alt="dodecahedro">
-        <img id="icosahedron" src=".\svg\icosahedron-svgrepo-com.svg", alt="icosahedron">
-        <img id="tetrahedron" src=".\svg\tetrahedron-svgrepo-com.svg", alt="tetrahedron">
+
     </body>
 </html>
