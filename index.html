@@ -2,57 +2,114 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>El blog de squirrel</title>
+        <title>MathNuts</title>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <style>
 
         body {
-            border: solid white 10px;
-            background-color: rgb(48, 25, 52);
+            background-color: rgb(250, 249, 246);
             padding-left: 20%;
             padding-right: 20%;
             padding-bottom: 10%;
         }
 
+        h1.main-header {
+            color: rgb(250, 249, 246);
+            background-color: rgb(65,41,39);
+            text-align: center;
+            font-family: "Canela", serif;
+            font-size: 35px;
+            border: solid 3px rgb(65,41,39);
+            z-index: 10;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin-bottom: 20px;  
+        } 
+
+        <!--div.buttons {
+        }
+         #button1 {
+            color: white;
+            background-color: rgb(65,41,39);
+            display: inline-block;
+            padding: 7px 15px;
+            font-size: 17px;
+            margin-top: 5px;
+        }-->
+        
         div.main-matter {
-            background-color: rgb(248, 250, 252);
+            background-color: rgb(250, 249, 246);
             padding-left: 20%;
             padding-right: 20%;
             padding-top: 3%;
-            padding-bottom:5% ;
+            padding-bottom:5%;
+            height: 600px;
+            <!--border: solid 3px rgb(65,41,39);-->
+            overflow-y: auto;
         }
         
-        p {
+        p { 
             text-align: justify;
             font-family: "Helvetica", sans-serif;
-            line-height: 23px;
+            line-height: 20px;
         }
 
         h1, h2, h3{ 
             font-family: "Helvetica", sans-serif;
         }
 
-        .main-header {
-            color:rgb(248, 250, 252);
-            text-align: center;
-            font-family: "Canela", serif;
-            font-size: 35px;
-            border: solid 3px rgb(248, 250, 252);    
-        } 
+        strong {
+            color: rgb(65,41,39) ; 
+        }
+
+        #dodecahedron {
+            position: absolute;
+            width: 400px;
+            bottom: 600px;
+            left: 100px;
+            z-index: -2;
+        }
+        #icosahedron {
+            position: absolute;
+            width: 400px;
+            bottom: 200px;
+            right: 100px;
+            z-index: -1;
+        }
+        #tetrahedron {
+            position: absolute;
+            width: 400px;
+            bottom: 100px;
+            left: 130px;
+            z-index: -1;
+        }
         </style>
     </head>
     <body>
-    <h1 class="main-header">Mates y Nueces</h1>
+        <h1 class="main-header">Mates y Nueces</h1>
+        <!--<div class="buttons">
+            <h3 id="button1"> Entradas </h2>
+        </div>-->
         <div class="main-matter">
-            <p>Hola! me llamo Kevin Celis y en en este espacio estaré compartiendo
-                las cosas más interesantes que me encuentre en la maestría!</p>
-            <h3>¿Por qué hacer un blog sobre matemáticas?</h3>
-            <p>Personalmente disfruto de compartir las cosas que me encuentro aprendiendo, especialmente sí son matemáticas, escibiendo este blog espero que más personas se interesen en mi área de investigación, 
-                o que simplemente descubran porque es tan fascinante. </p>
-            <p>De manera más objetiva, escribir para un publico general es una excelente manera de mejorar nuestras habilidades de redacción y de ordernar nuestras ideas, además de que es una excelente de forma de 
-                reflexionar acerca de los temas que uno cree que ya ha comprendido, lo que a largo plaza nos ayuda retener mejor la información, y a tener una mayor flexibilidad en la manera en que usamos nuestros 
-                conocimientos. Un libro muy recomendado para este tipo de estrategias es <a href="https://www.makeitstick.com/">Make it Stick</a>
+            <p>
+                <strong>¡Bienvenidxs!</strong> Yo soy Kevin Celis, y en este blog encontrarán mates random, tutoriales, reseñas y muchas <strong>¡nueces!</strong>
+            </p>
+            <p>
+                Actualmente me encuentro cursando la maestría en matemáticas en el <a href="https://www.matmor.unam.mx/es" target="_blank">CCM</a> de la UNAM Campus Morelia, mis principales
+                áreas de interes son los grupos Kleinianos, las 3 variedades, la geometría hiperbólica compleja y muy recientemente,
+                las aplicaciones del apredizaje profundo para encontrar grafos que satisfagan cierto conjunto de condiciones.
+            </p>
+            <p>
+                Mi lenguaje de programación principal estos días es <a href="https://julialang.org/" target="_blank">Julia</a>, que tiene la simpleza de python pero orientado a funciones, y diseñado especialmente para computo científico. 
+                Encuentro su sintaxis particularmente util para trasladar formulas matemáticas a codigo sin necesidad de importar librerias externas.
+            </p>
+            <p>
+                Además de hacer matemáticas, me gusta aprender de manera ociosa ideas de otras áreas, en particular me fascinan los idiomas, la astronomía, la biología, la tecnología y los negocios. Mis pasatiempos favoritos
+                son ver series, desde anime hasta thrillers, escuchar musica, principalmente twenty one pilots, y aprender repostería.
             </p>
         </div>
+        <img id="dodecahedron" src=".\svg\dodecahedron-svgrepo-com.svg", alt="dodecahedro">
+        <img id="icosahedron" src=".\svg\icosahedron-svgrepo-com.svg", alt="icosahedron">
+        <img id="tetrahedron" src=".\svg\tetrahedron-svgrepo-com.svg", alt="tetrahedron">
     </body>
 </html>
